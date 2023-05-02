@@ -340,7 +340,7 @@ function Home({ meals  }) {
     });
 }
 async function getServerSideProps() {
-    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_5__["default"].get("http://localhost:3000/api/meal");
+    const { data  } = await axios__WEBPACK_IMPORTED_MODULE_5__["default"].get("https://nextjsfoodorderingapp.vercel.app/api/meal");
     console.log(data);
     return {
         props: {
